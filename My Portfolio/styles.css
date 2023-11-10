@@ -90,9 +90,33 @@ a{
    justify-content: center;
 }
 
-/* About Me page */
+/* about me page */
 
 .abouttext{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* contact page*/
+
+.contacttext{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* photography page*/
+
+.photographytext{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* graphic design page*/
+
+.graphictext{
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 500;
