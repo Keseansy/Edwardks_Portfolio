@@ -1,6 +1,5 @@
 header{
-    background-color: #333; 
-    
+    background-color: #333;  
 }
 
 header > nav{
@@ -38,28 +37,53 @@ body{
     background-color: #333;
     color: #eaeaea;
     margin: 1.5rem;
-    
 }
 
 
 .me{
-    max-width: 240px;
-    justify-content: center;
-   
-}
-
-.caption{
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 300;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .splashtext{
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+    max-width: 620px;
+    margin-top: 5rem;
+    margin-bottom: auto;
+}
+
+.splashtext > p{
+    margin-bottom: 1rem;
+}
+
+@media(min-width:1000px){
+    .splashflex{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+    .splashtext{
+        text-align: left;
+        justify-content: left;
+    }
+    .me{
+        position: relative;
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .highlight{
@@ -67,7 +91,8 @@ body{
 }
 
 .button{
-    padding: 7px; 
+    text-align: center;
+    padding: 10px; 
     border: 1px solid #fbb03d;
     color:#eaeaea;
     font-size: 20px;
@@ -76,7 +101,7 @@ body{
 }
 
 .button:hover{
-    padding: 7px; 
+    padding: 10px; 
     border: 1px solid #fbb03d;;
     color:#333;
     background-color: #fbb03d;
@@ -92,10 +117,25 @@ a{
 
 /* about me page */
 
-.abouttext{
+.about{
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 500;
+}
+
+.buttonposition{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+@media(min-width:700px){
+    .abouttext{
+        max-width: 100%;
+        margin: 0 8rem;
+        padding: 1rem 0;
+
+    }
 }
 
 /* contact page*/
@@ -104,20 +144,226 @@ a{
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 500;
+    text-align: left;
 }
+
+.contacttext p{
+    text-align: center;
+    justify-content: center;
+}
+
+.comment-box{
+    display: block;
+    min-width: 50%;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 35px;
+    width: 70%;
+    height: 100%;
+}
+
+.comment-box input{
+    width: 100%;
+    height: 50px;
+    padding: 0 0 0 10px;
+    margin-bottom: 15px;
+    background-color: #eaeaea;
+    border: 1px solid #fbb03d;
+    border-radius: 4px; 
+}
+
+.comment-box textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px 0 0 10px;
+    margin-bottom: 15px;
+    background-color: #eaeaea;
+    border: 1px solid #fbb03d;
+    border-radius: 4px;
+}
+
+.comment-box .submit{
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 700;
+    border-radius: 4px;
+
+    width: 100px;
+    height: 40px;
+}
+
+.comment-box .submit:hover{
+    color: #333;
+    background-color: #fbb03d;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
 
 /* photography page*/
 
-.photographytext{
+.photographypage{
+    margin: 0 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 500;
 }
 
+.jumpnav > a{
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fbb03d;
+    color: #eaeaea;
+    background-color: #333;
+}
+
+.jumpnav > a:hover{
+    padding: 10px;
+    color: #333;
+    background-color: #fbb03d;
+}
+
+h2{
+    text-decoration: underline #fbb03d;
+}
+
+.landscapes img{
+    height: auto;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.animals img{
+    height: auto;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.portraits img{
+    height: auto;
+    max-width: 100%;
+    padding: 5px;
+}
+
+@media(min-width:1200px){
+    .landscapes img{
+        max-width: 45%; 
+        max-height: auto;
+    }
+
+    .landscapes{
+        margin: 0 .5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media(min-width:1200px){
+    .animals img{
+        max-width: 45%; 
+        max-height: auto;
+    }
+
+    .animals{
+        margin: 0 .5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media(min-width:800px){
+    .portraits img{
+        max-width: 30%; 
+        max-height: auto;
+    }
+
+    .portraits{
+        margin: 0 5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+
+
 /* graphic design page*/
+
+.designs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:400px;
+    min-width: 50%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
 
 .graphictext{
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     font-weight: 500;
 }
+
+.graphictext p, .graphictext img{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+    max-width: 500px;  
+    margin-bottom: auto; 
+}
+.graphictext p{
+    margin-bottom: 35px;
+}
+
+@media(min-width:900px){
+    .designs img{
+        max-width: 20%; 
+        max-height: auto;
+        padding: 0;
+    }
+
+    .graphic{
+        margin: 0 1rem;
+        padding: 5px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .projecttext{
+        display: block;
+        max-width: 100%;
+        margin: 3rem 5rem 3rem 15rem;
+
+    }
+
+    .projecttext > p{
+        max-width: 70%;
+        margin: 0 3rem;
+        padding: 1rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+ 
+
+
+
+
+
